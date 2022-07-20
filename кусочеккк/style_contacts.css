@@ -1,0 +1,818 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd,
+  ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, summary, time, mark, audio, video
+{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+{
+  display: block;
+}
+
+body
+{
+  line-height: 1;
+  color: #777777;
+}
+
+ol, ul
+{
+  list-style: none;
+}
+
+/*blockquote, q
+{
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after
+{
+  content: '';
+  content: none;
+}*/
+
+table
+{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  padding:5px;
+}
+table tr {
+  background: rgba(255, 255, 255, 0.2);
+}
+table tr:nth-child(even){
+  background: rgba(255, 255, 255, 0.3);
+}
+table tr td {
+  width: 33%;
+}
+table td, table th {
+  height: 2cm;
+  vertical-align: middle;
+}
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;700&display=swap');
+body {
+  color: #777777;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+}
+h1, h2, h3, h4{
+  color: #555555;
+  font-weight: 400;
+  text-transform: uppercase;  
+}
+h1, h2{
+  font-family: 'Amatic SC', cursive;
+}
+h1{
+  font-size: 2em;
+}
+h2{
+  font-size: 1.8em;
+  letter-spacing: 3px;
+}
+h3{
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+h4{
+  font-size: 1.2em;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+h4+p, h3+p, h4+a{
+  margin-top: 20px; /*отступы перед заголовками*/
+}
+p.description{
+  margin-bottom: 40px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.pad{ 
+padding: 0 30px; /*поля для абзацев с классом pad*/
+}
+@media (max-width:768px){
+  .pad{ 
+    padding: 0 5px; /*поля для абзацев с классом pad*/
+    }
+}
+p, .blocks_flex_cakes_box a, ul.cake-info, em, ul.info{
+  line-height: 1.7em;
+}
+ul.cake-info{
+  list-style-type: disc;
+  padding-left: 20px;
+}
+a{
+  text-decoration: none;
+  color:inherit;
+}
+
+.center {
+  text-align: center;
+}
+.container{
+width:70%;
+margin-right: auto;
+margin-left: auto;
+}
+.container1{
+  width:50%;
+  margin-right: auto;
+  margin-left: auto;
+  }
+.clearfix:after { content: "."; visibility: hidden; display: block;
+  height: 0; clear: both }
+
+/*отступы до и после секций*/
+section.main{
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+/*=========ЦВЕТНОЙ РОЗОВЫЙ ФОН!!!!!!!!!============*/
+section.bg_colorful1{
+  background: #e0b1a9;
+}
+.bg_colorful *{
+  color:white; /**цвет текста белый на цветных фонах*/
+} 
+/*=====ФОН Картинка======*/
+
+section.bg_paralax{
+  background: url("images/parallax5.jpg") 30% 50% no-repeat;
+  background-size: cover;
+  
+}
+section.bg_paralax1{
+  background: url("images/parallax4.jpg") 30% 40% no-repeat;
+  background-size: cover;
+}
+section.bg_paralax2{
+  background: url("images/parallax3.jpg") 30% 40% no-repeat;
+  background-size: cover;
+}
+@media (max-width:768px){
+  section.bg_paralax{
+  background-position: 50% 60%;
+}
+section.bg_paralax2{
+  background: url("images/parallax3-1050.jpg") left top no-repeat;
+}
+}
+
+
+/*   --------------HEADER----------------*/
+.logotipe{
+  float:left; /*блок логотипа сайта с изображением*/
+}
+header, #fixed_nav{
+  background: white;
+  padding: 20px 0px 25px 0px;
+}
+.logotipe_name{
+  padding: 10px 0 0 50px;
+  position: relative;
+}
+.logotipe_name:before{
+  content: url('images/logo.png');
+  height: 45px;
+  width: 42px;
+  position: absolute;
+  left: 0;
+  top:  0;
+}
+nav{
+  float: right; /*блок навигации сайта с обтеканием */
+}
+ul.menu li{
+  line-height: 2em;
+  font-weight: 700;
+  color: #555555;
+  display: inline-block;
+  position: relative; 
+  left: 0px; 
+  top: 10px;
+}
+.menu>li>a{
+  padding: 10px 0px;
+  color: inherit;
+}
+ul.menu li:not(:last-child){
+  padding-right: 30px; /*отступы между блоками меню, кроме последнего*/
+}
+.menu_line{
+  background: url("images/border_rad_sec.png") center no-repeat; /*картинка линии после header*/
+  height: 100px;
+}
+.menu li>a:hover{
+  background: url("images/border.png") no-repeat left bottom;
+}
+li.active>a{
+  background: url("images/border.png") no-repeat left bottom;
+}
+
+/*=============Выпадающий список меню=================*/
+.dropdown{
+  position: relative;
+}
+/* Выпадающее меню (скрыто по умолчанию) */
+.dropdown_nav {
+  transform-origin: top center;
+  position: absolute;
+  left: -25px;
+  min-width: 130px;
+  z-index: 1;
+  padding-top: 25px;
+  opacity: 0;
+}
+/* Ссылки внутри выпадающего списка */
+.dropdown_nav a {
+  background: rgba(255, 255, 255, 0.9);
+  color: inherit;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+  opacity: 0;
+}
+.dropdown_nav a:hover {
+  background-color: #ddd;
+}
+/* Отображени при поднесении мыши Выпадающего меню */
+.dropdown:hover .dropdown_nav {
+  opacity: 1;
+}
+/*анимация выпадающего списка*/
+.menu li.dropdown:hover .dropdown_nav a:first-of-type {
+  animation: menu4 0.2s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+.menu li.dropdown:hover .dropdown_nav a:nth-of-type(2) {
+  animation: menu4 0.2s ease-in-out forwards;
+  animation-delay: 0.4s;
+}
+
+.menu li.dropdown:hover .dropdown_nav a:last-of-type {
+  animation: menu4 0.2s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+
+@keyframes menu4 {
+  0% {
+    opacity: 0;
+    transform: translateX(50px) rotate(-90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0);
+  }
+}
+/*=============Меню после скролла страницы===============*/
+#fixed_nav{
+  display: none;
+  position: fixed;
+  background: #ffffff;
+  z-index: 999;
+  box-shadow: 0 1px 2px #bbb;
+  top: 0px;
+  width:100%;
+  animation: AppearMenu  2s;
+}
+@keyframes AppearMenu {
+  0%{
+    opacity:0;
+    }
+    100% {
+    opacity:1;
+    }}
+/*======== меню для мобильной версии =========*/
+.select_mob{
+  display: none;
+  margin-top: 30px;
+  border: 1px solid black;
+}
+select{
+  width: 100%;
+  height: 30px;
+  border: none;
+}
+select:focus{
+  outline: none;
+}
+/*========конец меню для мобильной версии =========*/
+@media (max-width: 1200px){
+  header {
+    text-align: center;
+  }
+  header nav, header .logotipe{
+    float: none; /*блок навигации и логотипа сайта без обтекания */
+  }
+  header .logotipe{
+    display:inline-block;
+  }
+  nav{
+    margin-top: 20px;
+  }
+  .dropdown_nav {
+    padding-top: 15px;
+  }
+}
+@media (max-width: 660px){
+  nav .menu{
+    display: none;
+  }
+  .logotipe, nav{
+    float: none;
+  }
+  .logotipe{
+    display: block;
+  }
+  .select_mob{
+    display: block;
+  }
+}
+/* =============  END HEADER   ============*/
+
+/*  ============ SPRITE_LINES  ============*/
+h2::after{ /*после каждого заголовка h2 фон линия черно-белая*/
+  width: 177px;
+  height: 15px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  content: "";
+  background: url("images/hr_sprite.png") center no-repeat;
+  background-position: 0px -73px;
+  display: block;
+}
+section div.container::after{/*после каждого смыслого блока фон вензеля черно-белая*/
+  width: 140px;
+  height: 30px;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  content: "";
+  background: url("images/hr_sprite.png") center no-repeat;
+  background-position: 0px -30px;
+  display: block;
+}
+/* Вензеля и линия на цветном фоне! */
+section.bg_colorful h2::after{
+  content: "";
+  background-position: 0 -57px;
+}
+section.bg_colorful div.container::after{
+  content: "";
+  background-position: 0 0;
+}
+/*  ============ END OF SPRITE_LINES  ============*/
+
+
+/*======= FOOTER  =====*/
+
+.contact_details{
+  background: url("images/footer.jpg") center top no-repeat;
+  height:500px;
+  background-size: cover;
+}
+.rad_line_footer{
+  background: url("images/border_rad1.png") center top no-repeat;
+}
+@media (max-width: 740px){
+  .contact_details{
+    background: url("images/border_rad1_1050.png") top no-repeat, 
+    url("images/footer_1050.jpg") 50% 15% no-repeat !important;
+}
+footer p{
+  line-height: 1.3em;
+}}
+
+/*=========Значки========*/
+.icons>a{
+font-size: 3em;
+transition: transform 0.5s;
+flex: 1 1 0%;
+margin: auto;
+}
+.icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+.icons>a:hover {
+  color: #c89e97;
+  transform: scale(1.2);
+  }
+  .logotipe_name_footer:before{
+    content: url('images/logo_foot.png');
+    height: 45px;
+    width: 42px;
+  }
+  .contact_details>.rad_line_footer>p{
+    margin-top: 20px;
+  }
+/*===============FLEX_BLOCKS==============*/
+.blocks_flex, .blocks_flex_4, .blocks_flex_cakes_box, div.blocks_flex_4.list>div{
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.blocks_flex, .blocks_flex_cakes_box{
+  margin-top: 35px;
+}
+form.contact>div.blocks_flex{
+  margin-top: 0px;
+}
+
+.blocks_flex_4.list>div{
+  margin-bottom: 40px;
+}
+div.number{
+  margin-right: 20px;
+}
+
+.blocks_flex div:last-of-type, .blocks_flex_4 div:nth-of-type(1n+2), .blocks_flex_cakes_box div:nth-of-type(1n+2){
+  margin-left: 15px; /* отступы между flex-элементами*/
+}
+.blocks_flex_4>div.row{
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: row;
+}
+div.block_image{
+  padding-top: 0 !important;
+  margin-right: 10px;
+  }
+  div.advant_left{
+    opacity: 0;
+    -webkit-transform: translate(-120%, 0px);
+        -ms-transform: translate(-120%, 0px);
+            transform: translate(-120%, 0px);
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+ }
+ .advant_left._active{
+  -webkit-transform: translate(0,0);
+      -ms-transform: translate(0,0);
+          transform: translate(0,0);
+  opacity: 1;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+div.advant_right{
+  opacity: 0;
+  -webkit-transform: translate(120%, 0px);
+      -ms-transform: translate(120%, 0px);
+          transform: translate(120%, 0px);
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.advant_right._active{
+  -webkit-transform: translate(0,0);
+      -ms-transform: translate(0,0);
+          transform: translate(0,0);
+  opacity: 1;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+ }
+/*анимация текста при скролле*/
+.move_text{
+  opacity: 0;
+  -webkit-transform: translate(0px, 50%);
+      -ms-transform: translate(0px, 50%);
+          transform: translate(0px, 50%);
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+._anim-items._active .move_text{
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  -webkit-transition: all 0.8s ease 0.5s;
+  -o-transition: all 0.8s ease 0.5s;
+  transition: all 0.8s ease 0.5s;
+}
+div.row._anim-items{
+  -webkit-transform: translateX(-100px);
+      -ms-transform: translateX(-100px);
+          transform: translateX(-100px);
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+.blocks_flex_4>div>div.number{
+  flex: 0 0 50px;
+  align-self: flex-start;
+}
+.blocks_flex_4>div.row>div.block_image>img{
+  max-width: 100%;
+  height:auto;
+}
+  .blocks_flex_4>div.row>div.block_image{
+      align-self: flex-start;
+  }
+.blocks_flex_cakes_box>div, .blocks_flex_4>div.row>div, .blocks_flex_4>div, .blocks_flex div{
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  flex: 1 1 0%;
+}
+/*===============флекс блоки мобильная версия==============*/
+/*@media (max-width: 740px){
+  .blocks_flex,.blocks_flex_4{
+    display: block;
+    width: 100%;
+}
+.blocks_flex div:last-of-type, .blocks_flex_4 div:nth-of-type(1n+2) {
+  margin-left: 0px !important; /* отступы между flex-элементами*/
+/*}}
+@media (max-width: 1050px){
+  .blocks_flex, .blocks_flex_cakes_box, .blocks_flex_4>div.row, div.blocks_flex_4.com{
+    flex-direction: column;#
+}
+
+.blocks_flex div:nth-of-type(1n+2), .blocks_flex_cakes_box div:nth-of-type(1n+2){
+  margin-left: 0px !important; /* отступы между flex-элементами*/
+/*}}*/
+@media (max-width: 768px){
+  .blocks_flex,.blocks_flex_4>div.row{
+    display: block;
+    width: 100%;
+}
+.block_image + .dashed {
+    margin-top: 30px;
+}
+.blocks_flex div:last-of-type{
+  margin-left: 0px !important; /* отступы между flex-элементами*/
+}}
+@media (max-width: 1200px){
+  .blocks_flex, .blocks_flex_cakes_box, .blocks_flex_4, div.blocks_flex_4.com, div.blocks_flex_4.list{
+    flex-direction: column;
+}
+.blocks_flex div:nth-of-type(1n+2), .blocks_flex_cakes_box div:nth-of-type(1n+2), .blocks_flex_4 div:nth-of-type(1n+2){
+  margin-left: 0px !important; /* отступы между flex-элементами*/
+}}
+/*=================на странице доставка перед блоками картинки=======================*/
+div.cards h3::before{
+  width: 115px;
+  height: 91px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  content: "";
+  background: url("images/sprite1.png") center no-repeat;
+  display: block;
+}
+div.cards h3.service::before{
+    background-position: 0px 0px;
+  }
+  div.cards h3.decorate::before{
+    background-position: 0px -91px;
+  }
+  div.cards h3.order::before{
+    background-position: 0px -182px;
+  }
+  
+
+/* ======== полоска на странице 4 перед блоком*/
+div.dashed::before, h1.dashed::before, div.dashed::after, h1.dashed::after {
+  content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: url("images/border.png") repeat-x;
+}
+div.dashed::before, h1.dashed::before{
+  left: 0;
+  top: 0;
+}
+div.dashed::after, h1.dashed::after{
+    left: 0;
+    bottom: 0;
+}
+h1.dashed{
+  padding-top: 30px;
+}
+h4.nopad{
+  padding:0;
+}
+.dashed{
+  position: relative;
+  padding-bottom: 30px;
+}
+/*====================CAKES=======================*/
+/*.circle{
+  border: 5px solid #f2e0dc;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}*/
+.circle, .circle.Cooker{
+  border: 5px solid #f2e0dc;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  min-width: 100px;
+  min-height: 100px;
+}
+.circle.Cooker{
+  min-width: 170px;
+  min-height: 170px;
+}
+/*.circleImg{
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  }*/
+  .circleImg, .circle.Cooker>img, .circleImgPars{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  .circle.Cooker>img{  
+  position:absolute;
+  top: 0;
+  left:0;    
+  }
+  @media (max-width:768px){
+    .circle{
+    min-width: 170px;
+    min-height: 170px;
+}
+    .circleImg{
+      position:absolute;
+      top: 0;
+      left:0; 
+    }
+  }
+
+.circle:hover{
+ border-color:#e0b1a9;
+}
+.catalog:hover{
+  border-color:#c89e97;
+ }
+
+  /*наложение полупрохрачного блока при наведении на изображение*/
+  div.imposition{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background:rgba(224,177,169, 0.5);
+    display: none;
+    }
+   .imposition:before {
+      content: '+';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      font-weight: 300;
+      font-size: 45px;
+      line-height: 46px;
+      margin-top: -23px;
+      text-align: center;
+  }
+    a.circle:hover div.imposition{
+      display: block;
+    }
+  
+
+ .cakes_box{
+  display: none;
+  margin: 10px 0;
+}
+.blocks_flex_cakes_box a{
+  color: inherit;
+}
+.blocks_flex_cakes_box a:hover{
+  color:#e0b1a9;
+}
+/*================ABOUT US====================*/
+/*========центрирование текста блока===========*/
+.about_img{ 
+  padding: 40px;
+}
+@media (max-width:768px){
+  .about_img{
+    padding:40px 5px 0 5px;
+  }
+  img.cake-img{
+    width: 100%;
+    height: auto;}
+}
+img.cake-img{
+  max-width: 100%;
+  height: auto;
+  margin-left: auto; 
+  margin-right: auto; 
+}  
+  h3.about{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h3.icon-comment:before{
+    content: "\f4ac";
+    font-size: 3em;
+    display: block;
+    margin-bottom: 20px;
+  }
+  h3.icon-clock:before { content: '\e802'; 
+    font-size: 3em;display: block;margin-bottom: 20px;}
+  h3.icon-gift:before { content: '\e801'; font-size: 3em; display: block;margin-bottom: 20px;}
+  h3.icon-star:before { content: '\e800'; font-size: 3em; display: block;margin-bottom: 20px;}
+  div.highlight:hover{
+background-color: rgba(220, 228, 228, 0.3);
+  }
+  div.highlight:hover h3.icon-clock:before, div.highlight:hover h3.icon-gift:before, div.highlight:hover h3.icon-star:before, div.highlight:hover h3.icon-comment:before{
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition-duration: 1s;
+         -o-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+/*===========Кнопка к началу страницы===========*/
+  #Top{
+    width: 45px;
+    height: 45px;
+    font-size: 27px;
+    line-height: 39px;
+    color: #777777;
+    background: #ffffff;
+    position: fixed;
+    right: 60px;
+    bottom: 150px;
+    border: 2px solid #777777;
+    display: none;
+    text-align: center;
+    text-decoration: none;
+    z-index: 2;
+    border-radius: 50%;}
+    #Top:hover{
+      background:#777777;
+      color: white;
+    }  
+    a.icon-up-open:before {
+       content: '\e804';
+   } /*стрелка внутри круга*/
+
+   .phone{
+     white-space:nowrap;
+   }
+   .button{
+    margin-top: 50px;
+  }
+  a.button{
+    color:white;
+    margin-top: 50px;
+    background: #c89e97;
+    font-weight: 700;
+    font-size: 14px;
+    display: block;
+    padding: 7px 15px 5px 15px;
+    min-height: 17px;
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;      
+  }
+  input[type=submit]:focus, input[type=submit]:hover, a.button:hover{
+    color: #c89e97;
+    background: #FFCCCC;
+  }
+  

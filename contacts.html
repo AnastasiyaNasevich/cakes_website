@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style_contact.css" type="text/css">
+    <link rel="stylesheet" href="fontelo/css/fontello.css" type="text/css"> <!-- иконический шрифт -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> <!-- подключение иконки вкладки сайта -->
+    <title>Контакты</title>
+</head>
+<body>
+    <header>
+        <div class="container clearfix">
+            <div class="logotipe">
+                <h1 class="logotipe_name">
+                    <a href="index.html">Свадебные торты</a>
+                </h1>    
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="index.html">
+                            Главная 
+                         </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                           О нас 
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="cakes.html">
+                            Торты
+                        </a>
+                        <!-- Выпадающее меню -->
+                        <div class="dropdown_nav">
+                            <a href="cakes.html#filling">Начинка</a>
+                            <a href="cakes.html#gallary">Галерея</a>
+                            <a href="cakes.html#degust">Дегустация</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="service.html">
+                            Заказ
+                        </a>
+                        <!-- Выпадающее меню -->
+                        <div class="dropdown_nav">
+                            <a href="service.html#cost">Стоимость</a>
+                            <a href="service.html#delivery">Доставка</a>
+                            <a href="service.html#sale">Акции</a>
+                        </div>
+                    </li>
+                    <li class="active">
+                        <a href="contacts.html">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+                <!-- меню для мобильных устройств -->
+                <div class="select_mob">
+                    <select onchange="javascript:handleSelect(this)">
+                        <option value="index">Главная</option>
+                        <option value="about">О нас</option>
+                        <option value="cakes">Торты</option>
+                        <option value="service">Заказ</option>
+                        <option selected="selected" value="contacts">Контакты</option>
+                </select>
+                </div>
+            </nav>
+        </div>
+        <!-- всплывающее меню при прокрутке страницы -->
+        <div id="fixed_nav">
+            <div class="container clearfix" >
+                <div class="logotipe">
+                    <h1 class="logotipe_name">
+                        Свадебные торты
+                    </h1> 
+                </div>
+                <nav>
+                    <ul class="menu">
+                        <li>
+                            <a href="index.html">
+                            Главная 
+                            </a>
+                        </li>
+                        <li >
+                            <a href="about.html">
+                            О нас 
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="cakes.html">
+                                Торты
+                            </a>
+                            <div class="dropdown_nav">
+                                <a href="cakes.html#filling">Начинка</a>
+                                <a href="cakes.html#gallary">Галерея</a>
+                                <a href="cakes.html#degust">Дегустация</a>
+                              </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="service.html">
+                                Заказ
+                            </a>
+                            <!-- Выпадающее меню -->
+                        <div class="dropdown_nav">
+                            <a href="service.html#cost">Стоимость</a>
+                            <a href="service.html#delivery">Доставка</a>
+                            <a href="service.html#sale">Акции</a>
+                        </div>
+                        </li>
+                        <li class="active">
+                            <a href="contacts.html">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="menu_line"></div>
+    </header>
+
+    <main>
+        <a href="#" class="icon-up-open" id="Top"></a>
+        <!--гугл-карта-->
+        <section>
+            <div class="container">
+                <h2 class="center">Контакты</h2>
+                <div id="googleMap"></div>
+            </div>   
+        </section>
+        <!--форма-->
+        <section class="info">
+            <div class="container">
+                <form id="contact" class="contact" method=get action="">
+                    <label class="name">
+                        <input type='text' name='nam' placeholder='Ваше имя'>
+                    </label>
+                    <div class="blocks_flex">
+                    <div>
+                    <label class="e-mail">
+                        <input type='text' name='e-mail' placeholder='Ваш e-mail'>
+                    </label>
+                    </div>
+                    <div>
+                    <label class="phone">
+                        <input type='text' name='phone' placeholder='Телефон'>
+                    </label></div>
+                    </div>
+                    <label class="text">
+                        <textarea name='mytext' placeholder='Введите сообщение'></textarea>
+                    </label>
+                    <div class="center button">
+                        <input type='submit' value='Отправить'>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="bg_colorful contact_details">
+        <div class="rad_line_footer">
+                <div class="container1 icons center">
+                    <a href="https://twitter.com/weddingcake61" title="Twitter" class="icon-twitter" target="_blank"></a>
+                    <a href="https://www.facebook.com/groups/756591044472922/" title="Facebook" class="icon-facebook" target="_blank"></a>
+                    <a href="https://www.google.com/search?sxsrf=AOaemvJ5jEXmta6fX6XWOSgEhewWQO7zRQ:1637091657355&source=univ&tbm=isch&q=%D1%82%D0%BE%D1%80%D1%82%D1%8B+%D1%81%D0%B2%D0%B0%D0%B4%D0%B5%D0%B1%D0%BD%D1%8B%D0%B5+google&fir=UnSZ2evld0BWCM%252CUJ6lV2swHoGBeM%252C_%253BAl1iIb40L0_wBM%252CRGlrkT6iMeAhuM%252C_%253B20OppUjS8y3IGM%252CTcbCIzsZiWQ8mM%252C_%253BmXosrAelZi7VXM%252CodoxcEZqnS5K7M%252C_%253BFlsfNYbH1OtaQM%252CUJxFb_WNyvwrgM%252C_%253BTkXvYzqH001J7M%252CRGlrkT6iMeAhuM%252C_%253BuKledJB2jIj7IM%252CcL5WMcxAEeL6LM%252C_%253BiXPr2jvX252D4M%252CRMGnwLfP5D2x8M%252C_%253BSMR7wHfjvt_7OM%252COdaLeJekf-5b5M%252C_%253B5e4rv1NPB3ebaM%252CcL5WMcxAEeL6LM%252C_%253BPmq3pxcgFwCI7M%252CqNQcqsNgnxXpCM%252C_%253B62sa2e_jaTF2YM%252CjRfCLIcch5dOsM%252C_%253B5PdepEn7U6GhCM%252CeOf6Rwdot5czXM%252C_%253BPrLd8NQ2oVSXIM%252CRGlrkT6iMeAhuM%252C_%253Bg7A-GAmspiITJM%252CTc4_GYwM7pYRTM%252C_%253B0BoCcvwL1Bf7dM%252CXxa-ZXZhnYULlM%252C_%253BkA4w6XtSQI6aOM%252CFWx8GpVGku9v3M%252C_%253B-qH5YabjU5f3tM%252C576vREI0zkvFhM%252C_&usg=AI4_-kTvRsokr3Osnli0gLn84lekkDYsiw&sa=X&ved=2ahUKEwid4c3V0Z30AhUBrYsKHVNwDzMQjJkEegQIExAC&biw=1920&bih=937&dpr=1" title="Google" class="icon-gplus" target="_blank"></a>
+                    <a href="https://www.instagram.com/nivcakes_minsk/" title="Instagram" class="icon-instagram" target="_blank"></a>
+                    <a href="https://www.pinterest.com/anastasiakabibibi/%D1%81%D0%B2%D0%B0%D0%B4%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9-%D1%82%D0%BE%D1%80%D1%82/" title="Instagram" class="icon-pinterest" target="_blank"></a>
+                </div>
+                <div class="container1 center">
+                    <p>Беларусь <span class="phone">г.Минск</span> <span class="phone">ул. Притыцкого 156</span> <span class="phone">(м. Каменная горка)</span></p>
+                    <p>Режим работы&colon; <span class="phone">ПН-ВС 9&colon;00 &hyphen; 20&colon;00</span></p>
+                    <p>Телефон&colon; <span class="phone">+375-33-225-40-52</span></p>
+                    <p><span class="phone">+375-33-225-40-70</span></p>
+                    <p>E-mail&colon; <span class="phone">anastasiya.n96&commat;mail.ru</span></p>
+                </div>
+                <div class="center">
+                    <h1 class="logotipe_name_footer">
+                        <a href="index.html">Свадебные торты</a>
+                    </h1>    
+                </div>
+                <p class="center">
+                    Copyright &copy; 2021 &VerticalSeparator; Privacy Policy
+                </p>
+            </div>
+    </footer>
+    <!-- подключение Google карты -->
+    <script src="JS/google_map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXrrffaI0gPE1j6PRc9duYA_cnu5IvS2U&callback=myMap"></script>
+    <script src="JS/scrollshow.js"></script><!-- видимсть кнопки с началу страницы -->
+    <script src="JS/mobile_title_menu.js"></script> <!--переключение меню в мобильной версии-->
+</body>
+</html>

@@ -1,0 +1,113 @@
+/*========центрирование текста блока===========*/
+.about_img{ 
+    padding: 40px;
+  }
+@media (max-width:768px){
+    .about_img{
+      padding:40px 5px 0 5px;
+    }
+    img.cake-img{
+      width: 100%;
+      height: auto;}
+}
+img.cake-img{
+    max-width: 100%;
+    height: auto;
+    margin-left: auto; 
+    margin-right: auto; 
+}  
+section.bg_paralax2{
+    background: url("images/parallax3.jpg") 30% 40% no-repeat;
+    background-size: cover;
+}
+@media (max-width:768px){
+    section.bg_paralax2{
+    background: url("images/parallax3-1000.jpg") 30% 40% no-repeat;
+    background-size: cover;
+    }
+}
+.blocks_flex_4>div>div.number{
+    flex: 0 0 50px;
+    align-self: flex-start;
+}
+div.number{
+    margin-right: 20px;
+}
+/*анимация блоков, появление справа и слева при скролле страницы*/
+div.advant_left{
+    display: none;
+    -webkit-transform: translate(-120%, 0px);
+        -ms-transform: translate(-120%, 0px);
+            transform: translate(-120%, 0px);
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.advant_left._active{
+   -webkit-transform: translate(0,0);
+      -ms-transform: translate(0,0);
+          transform: translate(0,0);
+    display: block;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+div.advant_right{
+    display: none;
+    -webkit-transform: translate(120%, 0px);
+      -ms-transform: translate(120%, 0px);
+          transform: translate(120%, 0px);
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.advant_right._active{
+    -webkit-transform: translate(0,0);
+      -ms-transform: translate(0,0);
+          transform: translate(0,0);
+    display: block;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+ }
+ /*иконки перед заголовком иконический шрифт*/
+h3.about{
+    margin-left: auto;
+    margin-right: auto;
+  }
+h3.icon-comment:before{
+    content: "\f4ac";
+    font-size: 3em;
+    display: block;
+    margin-bottom: 20px;
+  }
+h3.icon-clock:before {
+    content: '\e802'; 
+    font-size: 3em;
+    display: block;
+    margin-bottom: 20px;
+}
+h3.icon-gift:before {
+    content: '\e801';
+    font-size: 3em;
+    display: block;
+    margin-bottom: 20px;
+}
+h3.icon-star:before {
+    content: '\e800';
+    font-size: 3em;
+    display: block;
+    margin-bottom: 20px;
+}
+/*при наведении мыши на блок увеличивать иконку и подсвечивать фон*/
+div.highlight:hover{
+    background-color: rgba(220, 228, 228, 0.3);
+}
+div.highlight:hover h3.icon-clock:before, div.highlight:hover h3.icon-gift:before, div.highlight:hover h3.icon-star:before, div.highlight:hover h3.icon-comment:before{
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition-duration: 1s;
+         -o-transition-duration: 1s;
+            transition-duration: 1s;
+}

@@ -1,0 +1,208 @@
+
+/* Контейнер слайд-шоу */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+}
+/*линия после слайдера-галереи*/
+.slideshow-container:after {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  bottom: 0; left: 0;
+  background: url("images/border_rad.png") center bottom no-repeat;
+}
+/* Скрыть изображения по умолчанию */
+.mySlides {
+  display: none;
+}
+/* Точки */
+.dot {
+  bottom: 28px;
+  position: absolute;
+  left: 50%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.dot1{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  line-height: 8px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 20px;
+}
+span.dot1:hover {
+  background-color: #ff9999;
+}
+.activeNew {
+  background-color: #ff9999;
+}
+/* Исчезающая анимация */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/*=======конец слайд-шоу==========*/
+section.bg_paralax3{
+  background: url("images/parallax1.jpg") 30% 40% no-repeat;
+  background-size: cover;
+}
+@media (max-width:768px){
+  section.bg_paralax3{
+    background: url("images/parallax1-1050.jpg") 30% 40% no-repeat;
+    background-size: cover;
+  }
+}
+div.circle_box{
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  margin-right: 15px;
+  flex: 0 0 114px;
+}
+.blocks_flex_4>div.comment>div.name_comment{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.blocks_flex_4>div.comment>div.name_comment>h4{
+  align-content: center;
+  text-align: center;
+}
+@media (max-width: 1050px){
+  .blocks_flex_4>div.comment>div.name_comment>h4{
+    text-align: center;
+    padding-bottom: 14px;
+  }
+  .blocks_flex_4>div.comment>div.name_comment {
+    flex-direction: column;
+    justify-content: center;
+  }
+  div.circle_box{
+    max-width: 114px;
+  }
+  div.circle_box{
+    margin: auto;
+  }
+  div.comment>p{
+    text-align: center;
+  }
+}
+
+h3.step::before{/*картинки блока главной страницы */
+  width: 107px;
+  height: 113px;
+  margin-right: auto;
+  margin-left: auto;
+  content: "";
+  background: url("images/page-1_sprite.png") center no-repeat;
+  display: block;
+}
+div.plan_order:hover *{
+  color:#e0b1a9;
+}
+h3.choose_date::before{
+  content: "";
+  background-position: 0 0;
+}
+div.plan_order:hover>h3.choose_date::before{
+  content: "";
+  background-position: -107px 0;
+}
+h3.choose_cake::before{
+  content: "";
+  background-position: -214px 0;
+}
+div.plan_order:hover>h3.choose_cake::before{
+  content: "";
+  background-position: -321px 0;
+}
+h3.letter::before{
+  content: "";
+  background-position: -428px 0;
+}
+div.plan_order:hover>h3.letter::before{
+  content: "";
+  background-position: -535px 0;
+}
+h3.done_order::before{
+  content: "";
+  background-position: -642px 0;
+}
+div.plan_order:hover>h3.done_order::before{
+  content: "";
+  background-position: -749px 0;
+}
+div.wed_cake{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+ }
+ div.wed_cake>div{
+   flex:1 1 0%;
+ }
+div.cake_img>img{
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 1050px){
+  div.wed_cake{
+    flex-direction: column;
+  }
+  div.center>p{
+    padding: 0px;
+  }}
+  .arrows-nav{
+    padding: 20px 5px 0px 5px;
+  }
+  a.left_ar{
+    font-size: 20px;
+    transform: rotate(-90deg);
+    display: inline-block;
+  }
+  a.right_ar{
+    font-size: 20px;
+    transform: rotate(90deg);
+    display: inline-block;
+  }
+  a.right_ar:hover, a.left_ar:hover{
+    color: #c89e97;    
+  }
+  /*анимация появления текста снизу при скролле*/
+.move_text{
+  opacity: 0;
+  -webkit-transform: translate(0px, 50%);
+      -ms-transform: translate(0px, 50%);
+          transform: translate(0px, 50%);
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+._anim-items._active .move_text{
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  -webkit-transition: all 0.8s ease 0.5s;
+  -o-transition: all 0.8s ease 0.5s;
+  transition: all 0.8s ease 0.5s;
+}
+
+
+  
+  

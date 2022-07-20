@@ -1,0 +1,140 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_contacts.css" type="text/css">
+    <link rel="stylesheet" href="fontelo/css/fontello.css" type="text/css"> <!-- иконический шрифт -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> <!-- подключение иконки вкладки сайта -->
+    <title>О нас</title>
+  <style type="text/css">
+.news{
+     width: 100%;
+     box-sizing: border-box;
+     display: inline-block;
+   }
+   .image_news{
+     width: 50%;
+     margin-right: 20px;
+     float: left;
+   }
+   .image_news>img{
+    max-width: 100%;
+    height: auto;
+
+   }
+   .dashed_news{
+     margin-left: 50%;
+   }.clearfix:after { content: "."; visibility: hidden; display: block;
+  height: 0; clear: both }
+   @media (max-width:740px){
+    .news{ 
+    width: 100%;
+    display: block;
+      }
+  }
+  </style>
+  <script>
+ document.addEventListener( "DOMContentLoaded" , function() {
+ const on = (parent, event, selector, fn) => parent.addEventListener(event, ({target}) => {
+     if(target = target.closest(selector)) fn(target)
+ });
+
+ const parent = document.querySelector(".content");
+
+ const children  = parent.children;
+ let index = [...parent.children].indexOf(parent.querySelector(".show"));
+ const show = ({dataset : {up}}) => {
+ children[index].classList.remove("show");
+ index = (Number(up) + index + children.length) % children.length;
+ children[index].classList.add("show");
+ };
+ on(document, "click", "[data-up]", show);
+ });
+  </script>
+</head>
+
+<body>
+    <section class="main">
+        <div class="container">
+            <h2 class="center">Доставка</h2>
+            <div class="owl-carousel owl-theme owl-loaded owl-drag content">
+                <!-- <div class="owl-stage-outer"> -->
+                    <div class="news item show clearfix">
+                        <div class="image_news">
+                            <img src="images/page-1_img20.jpg" alt="Свадьба">
+                        </div>
+                        <div class="dashed_news">
+                            <h4>Способы доставки</h4>
+                            <p>
+                                <ul class="cake-info">
+                                    <li>Доставка курьером в г.Минске &mdash; бесплатно, <span class="phone">Минская область - 10руб.</span></li> 
+                                    <li>Самовывоз бесплатно по адресу <span class="phone">г.Минск ул.Притыцкого 156</span><br>
+                                        Режим работы пункта выдачи: <span class="phone">Пн-Вс с 10&colon;00 до 20&colon;00.</span>
+                                    </li>                                
+                                </ul>
+                                </p>  
+                        </div>
+                    </div>
+                    <div class="news item show clearfix">
+                        <div class="image_news">
+                            <img src="images/page-1_img21.jpg" alt="торт">
+                        </div>
+                        <div class="dashed_news">
+                            <h4>Интервалы доставки</h4>
+                            <p>
+                                Вы можете выбрать интервал доставки или указать точное время и мы постараемся подстроится под Вас. Доступные интервалы&colon;
+                            <ul class="cake-info">
+                                <li>с 10:00 до 12:00;</li> 
+                                <li>с 12:00 до 14:00;</li>
+                                <li>с 14:00 до 17:00;</li>
+                                <li>с 17:00 до 20:00.</li>
+                            </ul>
+                            </p> 
+                        </div>
+                    </div>
+                    <div class="news item  clearfix">
+                        <div class="image_news">
+                            <img src="images/page-1_img20.jpg" alt="Свадьба">
+                        </div>
+                        <div class="dashed_news">
+                            <h4>Способы доставки</h4>
+                            <p>
+                                <ul class="cake-info">
+                                    <li>Доставка курьером в г.Минске &mdash; бесплатно, <span class="phone">Минская область - 10руб.</span></li> 
+                                    <li>Самовывоз бесплатно по адресу <span class="phone">г.Минск ул.Притыцкого 156</span><br>
+                                        Режим работы пункта выдачи: <span class="phone">Пн-Вс с 10&colon;00 до 20&colon;00.</span>
+                                    </li>                                
+                                </ul>
+                                </p>  
+                        </div>
+                    </div>
+                    <div class="news item clearfix">
+                        <div class="image_news">
+                            <img src="images/page-1_img21.jpg" alt="торт">
+                        </div>
+                        <div class="dashed_news">
+                            <h4>Интервалы доставки</h4>
+                            <p>
+                                Вы можете выбрать интервал доставки или указать точное время и мы постараемся подстроится под Вас. Доступные интервалы&colon;
+                            <ul class="cake-info">
+                                <li>с 10:00 до 12:00;</li> 
+                                <li>с 12:00 до 14:00;</li>
+                                <li>с 14:00 до 17:00;</li>
+                                <li>с 17:00 до 20:00.</li>
+                            </ul>
+                            </p> 
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+            <div class="center arrows-nav">
+                <a class="icon-up-open left_ar"></a>
+                <a class="icon-up-open right_ar"></a>
+            </div>
+        </div>
+    </section>
+<button data-up="-1">back</button>
+<button data-up="1">forw</button>
+
+</body>
+</html>

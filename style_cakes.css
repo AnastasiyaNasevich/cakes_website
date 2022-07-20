@@ -1,0 +1,42 @@
+/*=====ФОН Картинка======*/
+section.bg_paralax1{
+    background: url("images/parallax4.jpg") 30% 40% no-repeat;
+    background-size: cover;
+  }
+  @media (max-width:768px){
+  section.bg_paralax1{
+    background: url("images/parallax4-1050.jpg") 30% 40% no-repeat;
+    background-size: cover;
+  }
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    padding:5px;
+}
+table tr {
+    background: rgba(255, 255, 255, 0.2);
+}
+table tr:nth-child(even){
+    background: rgba(255, 255, 255, 0.3);
+}
+table tr td {
+    width: 33%;
+}
+table td, table th {
+    height: 2cm;
+    vertical-align: middle;
+}
+.cakes_box{
+    display: none;
+    margin: 10px 0;
+}
+.blocks_flex_cakes_box a{
+    color: inherit;
+}
+.blocks_flex_cakes_box a:hover{
+    color:#e0b1a9;
+}  

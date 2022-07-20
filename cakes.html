@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style_cakes.css" type="text/css">
+    <link rel="stylesheet" href="fontelo/css/fontello.css" type="text/css"> <!-- иконический шрифт -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> <!-- подключение иконки вкладки сайта -->
+    <title>Торты</title>
+</head>
+<body>
+    <header>
+        <div class="container clearfix">
+            <div class="logotipe">
+                <h1 class="logotipe_name">
+                    Свадебные торты
+                </h1> 
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="index.html">
+                           Главная 
+                        </a>
+                    </li>
+                    <li >
+                        <a href="about.html">
+                           О нас 
+                        </a>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="cakes.html">
+                            Торты
+                        </a>
+                        <!-- Выпадающее меню -->
+                        <div class="dropdown_nav">
+                            <a href="cakes.html#filling">Начинка</a>
+                            <a href="cakes.html#gallary">Галерея</a>
+                            <a href="cakes.html#degust">Дегустация</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="service.html">
+                            Заказ
+                        </a>
+                        <!-- Выпадающее меню -->
+                        <div class="dropdown_nav">
+                            <a href="service.html#cost">Стоимость</a>
+                            <a href="service.html#delivery">Доставка</a>
+                            <a href="service.html#sale">Акции</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="contacts.html">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+                <!-- меню для мобильных устройств -->
+                <div class="select_mob">
+                    <select onchange="javascript:handleSelect(this)">
+                        <option value="index">Главная</option>
+                        <option value="about">О нас</option>
+                        <option selected="selected" value="cakes">Торты</option>
+                        <option value="service">Заказ</option>
+                        <option value="contacts">Контакты</option>
+                </select>
+                </div>
+            </nav>
+        </div>
+        <!-- всплывающее меню при прокрутке страницы -->
+        <div id="fixed_nav">
+            <div class="container clearfix" >
+                <div class="logotipe">
+                    <h1 class="logotipe_name">
+                        Свадебные торты
+                    </h1> 
+                </div>
+                <nav>
+                    <ul class="menu">
+                        <li>
+                            <a href="index.html">
+                            Главная 
+                            </a>
+                        </li>
+                        <li >
+                            <a href="about.html">
+                            О нас 
+                            </a>
+                        </li>
+                        <li class="dropdown active">
+                            <a href="cakes.html">
+                                Торты
+                            </a>
+                            <div class="dropdown_nav">
+                                <a href="cakes.html#filling">Начинка</a>
+                                <a href="cakes.html#gallary">Галерея</a>
+                                <a href="cakes.html#degust">Дегустация</a>
+                              </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="service.html">
+                                Заказ
+                            </a>
+                            <!-- Выпадающее меню -->
+                        <div class="dropdown_nav">
+                            <a href="service.html#cost">Стоимость</a>
+                            <a href="service.html#delivery">Доставка</a>
+                            <a href="service.html#sale">Акции</a>
+                        </div>
+                        </li>
+                        <li>
+                            <a href="contacts.html">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="menu_line"></div>
+        </header>
+
+    <main>
+        <a href="#" class="icon-up-open" id="Top"></a>
+        <section class="main">
+            <div class="container">
+                <h2 class="center">Варианты свадебного торта</h2>
+                <div class="blocks_flex_4">
+                    <div class="row">
+                        <div class="center ">
+                        <div class="circle Cooker">
+                            <img  src="images/page-3_img1.jpg" alt="Круглый торт" title="Круглый торт">
+                        </div>
+                        <h4>Круглый торт</h4>
+                        <p>
+                            Все привыкли, что по традиции классический свадебный торт имеет круглую форму. Отлично смотрится многояругсный торт с фигурками молодоженов на верхнем ярусе.
+                        </p>
+                        </div>
+
+                        <div class="center">
+                        <div class="circle Cooker">
+                            <img src="images/page3_img2.jpg" alt="Квадратный торт" title="Квадратный торт">
+                        </div>
+                        <h4>Квадратный торт</h4>
+                        <p>
+                            Круглый торт &mdash; самый популярный торт сейчас. Но это не значит, что ваш свадебный торт должен быть круглым. Теперь вы может сделать торт любой формы. Например, квадратная форма торта смотрится очень хорошо.
+                            Острые углы придают строгость вашему украшению стола. </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                    <div class="center">
+                        <div class="circle Cooker" >
+                            <img src="images/page3_img3.jpg" alt="Капкейки" title="Капкейки">
+                        </div>
+                        <h4>Капкейки</h4>
+                        <p>
+                            Капкейк &mdash; это порционный бисквитный десерт с белковым кремом и сладким декором.
+                            По вкусу могут быть ванильными или шоколадными. Дополняем свежемороженой клубникой, вишней, консервированным персиком, уваренным сгущенным молоком, арахисом. 
+                        </p>
+                    </div>
+                    <div class="center">
+                        <div class="circle Cooker" >
+                            <img src="images/page-3_img4.jpg" alt="На заказ" title="На заказ">
+                        </div>
+                        <h4>Необычной геометрической формы</h4>
+                        <p>
+                           Если Вы не нашли для себя по душе нужную форму &mdash; мы с радостью выслушаем Ваши пожелания и воплотим их в реальность&excl;
+                        </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="main bg_paralax1 bg_colorful">
+            <div class="container">
+                <h2 class="center">Рассчет веса тортика</h2>
+                <table>
+                        <tr>
+                            <th>Количество гостей</th>
+                            <th>Вес торта</th>
+                            <th>Количество ярусов</th>
+                        </tr>
+                        <tr>
+                            <td>8&hyphen;15 человек</td>
+                            <td>2&hyphen;3 кг</td>
+                            <td>1 ярус</td>
+                        </tr>
+                        <tr>
+                            <td>15&hyphen;20 человек</td>
+                            <td>3&hyphen;4 кг</td>
+                            <td>1&hyphen;2 яруса</td>
+                        </tr>
+                        <tr>
+                            <td>20&hyphen;30 человек</td>
+                            <td>4,5&hyphen;6кг</td>
+                            <td>2 яруса</td>
+                        </tr>
+                        <tr>
+                            <td>40&hyphen;50 человек</td>
+                            <td>6&hyphen;7 кг</td>
+                            <td>2&hyphen;3 яруса</td>
+                        </tr>
+                        <tr>
+                            <td>50&hyphen;60 человек</td>
+                            <td>8&hyphen;9кг</td>
+                            <td>2&hyphen;3 яруса</td>
+                        </tr>
+                        <tr>
+                            <td>60+ человек</td>
+                            <td>от 10 кг</td>
+                            <td>3&hyphen;4 яруса</td>
+                        </tr>
+                </table>
+            </div>
+        </section>
+        <a name="degust"></a>
+        <section class="main">
+            <div class="container">
+                <h2 class="center">Дегустация</h2>
+                <div class="center cent_block">
+                    <p>
+                        Если Вы хотите заказать торт и быть уверены в том, что торт будет точно вкусный, то у нас для Вас очень хорошие новости! Наша кондитерская готова предоставить дегустационный набор с кусочками начинок тортов, благодаря которым Вы сможете оценить качество и вкус тортов.
+                        Это идеальный первый шаг и самые крошечные инвестиции, которые гарантируют Вам уверенность в том, что торт окажется вкусный и удивит всех гостей.
+                        Дегустация является  абсолютно бесплатной услугой. Для этого Вам необходимо приехать к нам в кондитерскую в заранее оговоренное время.</p>
+                </div>
+                <a href="#" class="center button" title="дополнительная информация">Подробнее</a>
+            </div>
+        </section>
+        <a name="gallary"></a>
+        <section class="main bg_colorful1 bg_colorful">
+            <div class="container">
+                <h2 class="center">Галерея свадебных тортов</h2>
+                <div class="blocks_flex_4">
+                    <div class="row">
+                        <div class="center ">
+                            <a data-fancybox="gallery" class="circle catalog"  href="images/page-3_img5_original.jpg" title="Увеличить изображение">
+                                <img class="circleImg" src="images/page-3_img5.jpg" alt="Летний сад" title="Летний сад">
+                                <div class="imposition"></div>
+                            </a>
+                            <h4>Летний сад</h4>
+                        </div>
+                        <div class="center">
+                            <a data-fancybox="gallery" class="circle catalog"  href="images/page-3_img6_original.jpg" title="Увеличить изображение">
+                                <img class="circleImg" src="images/page-3_img6.jpg" alt="Гармония любви" title="Гармония любви">
+                                <div class="imposition"></div>
+                            </a>
+                            <h4>Гармония любви</h4>
+                        </div>
+                        <div class="center">
+                            <a data-fancybox="gallery" class="circle catalog"  href="images/page-3_img7_original.jpg" title="Увеличить изображение">
+                                <img class="circleImg" src="images/page-3_img7.jpg" alt="Невеста" title="Невеста">
+                                <div class="imposition"></div>
+                            </a>
+                            <h4>Невеста</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center">
+                            <a data-fancybox="gallery" class="circle catalog" href="images/page-3_img8_original.jpg" title="Увеличить изображение">
+                                <img class="circleImg" src="images/page-3_img8.jpg" alt="Букет вкуса" title="Букет вкуса">
+                                <div class="imposition"></div>
+                            </a>
+                            <h4>Букет вкуса</h4>
+                        </div>
+                        <div class="center">
+                            <a data-fancybox="gallery" class="circle catalog" href="images/page-3_img9_original.jpg" title="Увеличить изображение">
+                                <img class="circleImg" src="images/page-3_img9.jpg" alt="Классик" title="Классик">
+                                <div class="imposition"></div>
+                            </a>
+                            <h4>Классик</h4>
+                        </div>
+                        <div class="center">
+                            <a data-fancybox="gallery" class="circle catalog" href="images/page-3_img10_original.jpg" title="Увеличить изображение">
+                                <img class="circleImg" src="images/page-3_img10.jpg" alt="Кусочек рая" title="Кусочек рая">
+                                <div class="imposition"></div>
+                            </a>
+                            <h4>Кусочек рая</h4>
+                        </div>
+                </div>
+                </div>
+            </div>
+        </section>
+         <a name="filling"></a>
+        <section class="main">
+            <div class="container">
+                <h2 class="center">Начинка и оформление</h2>
+                <div class="blocks_flex_cakes_box center">
+                    <div>
+                        <h4>Декор торта</h4>
+                        <a class="box" href="#">Ягоды</a>
+                        <div id="link1" class="cakes_box">Ягоды на торте по возможности используются свежие и преподнесут летнее настроение в любую пору года.</div>
+                        <a class="box" href="#">Живые цветы</a>
+                        <div id="link2" class="cakes_box">Украшение живыми цветами сейчас на пике популярности. Не переживайте по поводу их стойкости &mdash; все цветы заранее напитываются водой и изолируются пищевой пленкой от съедобной части десерта.
+                             Так что они точно доживут до вечера и на вкус не повлияют.</div>
+                        <a class="box" href="#">Шоколад и шоколадный декор</a>
+                        <div id="link2" class="cakes_box">Торт можно украсить как полностью шоколадом, так и просто различные фигурки из него дополнят образ.</div>
+                    </div>
+                    <div>
+                        <h4>Начинки</h4>
+                        <a class="box" href="#">Красный бархат с вишней</a>
+                        <div id="link3" class="cakes_box">Легкий шоколадный бисквит, пропитанный крем&hyphen;чиз с вишней.</div>
+                        <a class="box" href="#">Мак&hyphen;малина</a>
+                        <div id="link4" class="cakes_box">Маковый бисквит, пропитанный крем&hyphen;чиз с малиной.</div>
+                        <a class="box" href="#">Банан-карамель</a>
+                        <div id="link4" class="cakes_box">Банановый бисквит с карамельным кремом с маскарпоне и карамелизированными бананами.</div>
+                        <a class="box" href="#">Трюфель</a>
+                        <div id="link4" class="cakes_box">Шоколадный бисквит, трюфельный крем с ромом. Можно добавить ягодную прослойку на Ваш выбор.</div>
+                        <a class="box" href="#">Шоколадно&hyphen;миндальный</a>
+                        <div id="link4" class="cakes_box">Шоколадные бисквиты пропитаны сиропом и поочередно соединены шоколадным кремом на основе сливочного сыра с кусочками жареного дробленого миндаля.</div>
+                        <a class="box" href="#">Наслаждение</a>
+                        <div id="link4" class="cakes_box">Классические белые бисквиты пропитаны сиропом и поочередно соединены кремом на основе сливочного масла с добавлением вареного сгущенного молока, 
+                            кусочков шоколада и крошки воздушной меренги. Покрыт суфле.</div>
+                    </div>
+                    <div>
+                        <h4>Варианты покрытия торта</h4>
+                        <a class="box" href="#">Мастика</a>
+                        <div class="cakes_box">Украшения из мастики превращают простой торт в произведение искусства. Мастика дает идеально ровную поверхность, что является большим преимуществом при транспортировке, хорошо держит форму, к тому же её можно сделать абсолютно любого цвета.</div>
+                        <a  class="box" href="#">Крем</a>
+                        <div class="cakes_box">Шоколадное или кремовое покрытие придают особую изюминку вкусу торта &mdash; наши кондитеры помогут идеально подобрать их к той или иной основе.</div>
+                        <a  class="box" href="#">Глянцевая глазурь</a>
+                        <div class="cakes_box">Альтернатива покрытия тортов мастикой &mdash; глянцевая глазурь на основе белого шоколада. На торте сохраняется идеальная ровная поверхность и глянец, а покрывается глазурь сверху на крем&hyphen;чиз.</div>
+                     </div>
+                </div>
+            </div>
+        </section>
+</main>
+
+<footer class="bg_colorful contact_details">
+    <div class="rad_line_footer">
+            <div class="container1 icons center">
+                <a href="https://twitter.com/weddingcake61" title="Twitter" class="icon-twitter" target="_blank"></a>
+                <a href="https://www.facebook.com/groups/756591044472922/" title="Facebook" class="icon-facebook" target="_blank"></a>
+                <a href="https://www.google.com/search?sxsrf=AOaemvJ5jEXmta6fX6XWOSgEhewWQO7zRQ:1637091657355&source=univ&tbm=isch&q=%D1%82%D0%BE%D1%80%D1%82%D1%8B+%D1%81%D0%B2%D0%B0%D0%B4%D0%B5%D0%B1%D0%BD%D1%8B%D0%B5+google&fir=UnSZ2evld0BWCM%252CUJ6lV2swHoGBeM%252C_%253BAl1iIb40L0_wBM%252CRGlrkT6iMeAhuM%252C_%253B20OppUjS8y3IGM%252CTcbCIzsZiWQ8mM%252C_%253BmXosrAelZi7VXM%252CodoxcEZqnS5K7M%252C_%253BFlsfNYbH1OtaQM%252CUJxFb_WNyvwrgM%252C_%253BTkXvYzqH001J7M%252CRGlrkT6iMeAhuM%252C_%253BuKledJB2jIj7IM%252CcL5WMcxAEeL6LM%252C_%253BiXPr2jvX252D4M%252CRMGnwLfP5D2x8M%252C_%253BSMR7wHfjvt_7OM%252COdaLeJekf-5b5M%252C_%253B5e4rv1NPB3ebaM%252CcL5WMcxAEeL6LM%252C_%253BPmq3pxcgFwCI7M%252CqNQcqsNgnxXpCM%252C_%253B62sa2e_jaTF2YM%252CjRfCLIcch5dOsM%252C_%253B5PdepEn7U6GhCM%252CeOf6Rwdot5czXM%252C_%253BPrLd8NQ2oVSXIM%252CRGlrkT6iMeAhuM%252C_%253Bg7A-GAmspiITJM%252CTc4_GYwM7pYRTM%252C_%253B0BoCcvwL1Bf7dM%252CXxa-ZXZhnYULlM%252C_%253BkA4w6XtSQI6aOM%252CFWx8GpVGku9v3M%252C_%253B-qH5YabjU5f3tM%252C576vREI0zkvFhM%252C_&usg=AI4_-kTvRsokr3Osnli0gLn84lekkDYsiw&sa=X&ved=2ahUKEwid4c3V0Z30AhUBrYsKHVNwDzMQjJkEegQIExAC&biw=1920&bih=937&dpr=1" title="Google" class="icon-gplus" target="_blank"></a>
+                <a href="https://www.instagram.com/nivcakes_minsk/" title="Instagram" class="icon-instagram" target="_blank"></a>
+                <a href="https://www.pinterest.com/anastasiakabibibi/%D1%81%D0%B2%D0%B0%D0%B4%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9-%D1%82%D0%BE%D1%80%D1%82/" title="Instagram" class="icon-pinterest" target="_blank"></a>
+            </div>
+            <div class="container1 center">
+                <p>Беларусь <span class="phone">г.Минск</span> <span class="phone">ул. Притыцкого 156</span> <span class="phone">(м. Каменная горка)</span></p>
+                <p>Режим работы&colon; <span class="phone">ПН-ВС 9&colon;00 &hyphen; 20&colon;00</span></p>
+                <p>Телефон&colon; <span class="phone">+375-33-225-40-52</span></p>
+                <p><span class="phone">+375-33-225-40-70</span></p>
+                <p>E-mail&colon; <span class="phone">anastasiya.n96&commat;mail.ru</span></p>
+            </div>
+            <div class="center">
+                <h1 class="logotipe_name_footer">
+                    <a href="index.html">Свадебные торты</a>
+                </h1>    
+            </div>
+            <p class="center">
+                Copyright &copy; 2021 &VerticalSeparator; Privacy Policy
+            </p>
+        </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="JS/cakes_box.js"></script>
+<script src="JS/scrollshow.js"></script><!-- видимсть кнопки с началу страницы -->
+<script src="JS/mobile_title_menu.js"></script> <!--переключение меню в мобильной версии-->
+</body>
+</html>

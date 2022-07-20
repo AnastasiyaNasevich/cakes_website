@@ -1,0 +1,32 @@
+section.bg_paralax{
+    background: url("images/parallax5.jpg") 30% 50% no-repeat;
+    background-size: cover;
+    
+  }
+  @media (max-width:768px){
+  section.bg_paralax{
+    background: url("images/parallax5-1050.jpg") 30% 50% no-repeat;
+    background-size: cover;
+}
+}
+/* перед заголовками блока иконка*/
+div.cards h3::before{
+    width: 115px;
+    height: 91px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    content: "";
+    background: url("images/sprite1.png") center no-repeat;
+    display: block;
+  }
+div.cards h3.service::before{
+    background-position: 0px 0px;
+}
+div.cards h3.decorate::before{
+    background-position: 0px -91px;
+}
+div.cards h3.order::before{
+    background-position: 0px -182px;
+}
